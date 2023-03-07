@@ -7,7 +7,6 @@ import time
 import sys
 import matplotlib.pyplot as plt
 import numpy as np
-from playsound import playsound
 from scipy.io.wavfile import write
 
 if len(sys.argv) == 1:
@@ -55,8 +54,6 @@ def SaveSound(signal, f_rate, filename="output.wav"):
     return filename
 
 
-def PlaySound(filename):
-    playsound(filename)
 
 
 def visualize(signal, f_rate):
@@ -78,8 +75,4 @@ def Disguise():
     #visualize(signal, f_rate)
 
 
-if __name__ == "__main__":
-    Disguise()
-    i = input("Do you want to play the output y/N: ")
-    if i == "yes" or i == "y":
-        PlaySound("output.wav")
+
