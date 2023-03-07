@@ -1,6 +1,6 @@
 random2
 numpy
 scipy
-playsound
+
 matplotlib
-pygobject
+
